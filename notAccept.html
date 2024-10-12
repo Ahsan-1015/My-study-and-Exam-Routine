@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Routine</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @keyframes horizontalMove {
+      0% {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .animate-horizontal {
+      animation: horizontalMove 0.5s ease-in-out;
+    }
+
+    .hover\:bg-pink-200:hover {
+      background-color: rgba(255, 182, 193, 0.5);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+  <div class="flex flex-wrap justify-center">
+    <!-- Mid Term Exam Routine -->
+    <div class="bg-green-200 shadow-lg m-4 p-4 rounded-lg animate-horizontal">
+      <h2 class="text-center text-xl font-bold">Mid Term Exam Routine - 61A (CSE)</h2>
+      <table class="min-w-full mt-4 border-collapse">
+        <thead>
+          <tr>
+            <th class="bg-green-300 p-2">Date</th>
+            <th class="bg-green-300 p-2">Time</th>
+            <th class="bg-green-300 p-2">Course Title</th>
+            <th class="bg-green-300 p-2">Teacher</th>
+            <th class="bg-green-300 p-2">Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border p-2">18-10-24<br>Friday</td>
+            <td class="border p-2">02:00-03:00 PM</td>
+            <td class="border p-2">CSE 315: Operating System</td>
+            <td class="border p-2">Monorara Sultana Marzia</td>
+            <td class="border p-2">225, 226</td>
+          </tr>
+          <tr>
+            <td class="border p-2">19-10-24<br>Saturday</td>
+            <td class="border p-2">02:00-03:00 PM</td>
+            <td class="border p-2">CSE 319: Theory of Computing</td>
+            <td class="border p-2">Maysha Famidha</td>
+            <td class="border p-2">225, 226</td>
+          </tr>
+          <tr>
+            <td class="border p-2">20-10-24<br>Sunday</td>
+            <td class="border p-2">02:00-03:00 PM</td>
+            <td class="border p-2">CSE 311: Database Management System</td>
+            <td class="border p-2">Jalal Uddin</td>
+            <td class="border p-2">225, 226</td>
+          </tr>
+          <tr>
+            <td class="border p-2">21-10-24<br>Monday</td>
+            <td class="border p-2">11:00-12:00 PM</td>
+            <td class="border p-2">MAT 103: Analytical & Vector Geometry</td>
+            <td class="border p-2">Arijuman Ara</td>
+            <td class="border p-2">222, 223, 224</td>
+          </tr>
+          <tr>
+            <td class="border p-2">22-10-24<br>Tuesday</td>
+            <td class="border p-2">09:30-10:30 AM</td>
+            <td class="border p-2">CSE 215: Algorithms</td>
+            <td class="border p-2">Faria Rahman</td>
+            <td class="border p-2">225, 226</td>
+          </tr>
+          <tr>
+            <td class="border p-2">25-10-24<br>Friday</td>
+            <td class="border p-2">09:30-10:30 AM</td>
+            <td class="border p-2">EEE 303: Electronic Circuit – II</td>
+            <td class="border p-2">Md. Ziaul Islam</td>
+            <td class="border p-2">222</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Weekly Study Routine -->
+    <div class="bg-purple-200 shadow-lg m-4 p-4 rounded-lg animate-horizontal">
+      <h2 class="text-center text-xl font-bold">Weekly Study Routine</h2>
+      <table class="min-w-full mt-4 border-collapse">
+        <thead>
+          <tr>
+            <th class="bg-purple-300 p-2">Time</th>
+            <th class="bg-purple-300 p-2">Saturday</th>
+            <th class="bg-purple-300 p-2">Sunday</th>
+            <th class="bg-purple-300 p-2">Monday</th>
+            <th class="bg-purple-300 p-2">Tuesday</th>
+            <th class="bg-purple-300 p-2">Wednesday</th>
+            <th class="bg-purple-300 p-2">Thursday</th>
+            <th class="bg-purple-300 p-2">Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border p-2">09:00 - 04:00</td>
+            <td class="border p-2">University Class</td>
+            <td class="border p-2">University Class</td>
+            <td class="border p-2">University Class</td>
+            <td class="border p-2">University Class</td>
+            <td class="border p-2">Holiday</td>
+            <td class="border p-2">Holiday</td>
+            <td class="border p-2">Holiday</td>
+          </tr>
+          <tr>
+            <td class="border p-2">04:00 - 04:30</td>
+            <td class="border p-2">Refreshment</td>
+            <td class="border p-2">Refreshment</td>
+            <td class="border p-2">Refreshment</td>
+            <td class="border p-2">Refreshment</td>
+            <td class="border p-2">Refreshment</td>
+            <td class="border p-2">Refreshment</td>
+            <td class="border p-2">Refreshment</td>
+          </tr>
+          <tr>
+            <td class="border p-2">04:30 - 06:30</td>
+            <td class="border p-2">Web Dev Module</td>
+            <td class="border p-2">Web Dev Module</td>
+            <td class="border p-2">Web Dev Module</td>
+            <td class="border p-2">Web Dev Module</td>
+            <td class="border p-2">Web Dev Module</td>
+            <td class="border p-2">Web Dev Module</td>
+            <td class="border p-2">Web Dev Module</td>
+          </tr>
+          <tr>
+            <td class="border p-2">06:30 - 07:00</td>
+            <td class="border p-2">Break</td>
+            <td class="border p-2">Break</td>
+            <td class="border p-2">Break</td>
+            <td class="border p-2">Break</td>
+            <td class="border p-2">Break</td>
+            <td class="border p-2">Break</td>
+            <td class="border p-2">Break</td>
+          </tr>
+          <tr>
+            <td class="border p-2">07:00 - 09:00</td>
+            <td class="border p-2">Assignment</td>
+            <td class="border p-2">Assignment</td>
+            <td class="border p-2">Assignment</td>
+            <td class="border p-2">Self-Study</td>
+            <td class="border p-2">Assignment</td>
+            <td class="border p-2">Self-Study</td>
+            <td class="border p-2">Assignment</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

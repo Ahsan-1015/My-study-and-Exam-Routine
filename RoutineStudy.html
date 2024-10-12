@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Weekly Routine</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body class="bg-blue-100 min-h-screen flex items-center justify-center p-5">
+  <div class="w-full max-w-5xl bg-white shadow-2xl rounded-lg overflow-hidden">
+    <div class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-center py-4 text-3xl font-bold">
+      Weekly Routine
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-center border-collapse text-gray-800 table-auto fade-in">
+        <thead class="bg-blue-200 text-lg">
+          <tr>
+            <th class="p-4 border">সময়</th>
+            <th class="p-4 border">শনিবার</th>
+            <th class="p-4 border">রবিবার</th>
+            <th class="p-4 border">সোমবার</th>
+            <th class="p-4 border">মঙ্গলবার</th>
+            <th class="p-4 border">বুধবার</th>
+            <th class="p-4 border">বৃহস্পতিবার</th>
+            <th class="p-4 border">শুক্রবার</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white hover:bg-blue-50 transition-colors">
+            <td class="p-4 border">৯:০০ - ৪:০০</td>
+            <td class="p-4 border">ভার্সিটি ক্লাস</td>
+            <td class="p-4 border">ভার্সিটি ক্লাস</td>
+            <td class="p-4 border">ভার্সিটি ক্লাস</td>
+            <td class="p-4 border">ভার্সিটি ক্লাস</td>
+            <td class="p-4 border">ছুটি</td>
+            <td class="p-4 border">ছুটি</td>
+            <td class="p-4 border">ছুটি</td>
+          </tr>
+          <tr class="bg-gray-100 hover:bg-blue-50 transition-colors">
+            <td class="p-4 border">৪:০০ - ৪:৩০</td>
+            <td class="p-4 border">রিফ্রেশমেন্ট</td>
+            <td class="p-4 border">রিফ্রেশমেন্ট</td>
+            <td class="p-4 border">রিফ্রেশমেন্ট</td>
+            <td class="p-4 border">রিফ্রেশমেন্ট</td>
+            <td class="p-4 border">ছুটি</td>
+            <td class="p-4 border">ছুটি</td>
+            <td class="p-4 border">রিফ্রেশমেন্ট</td>
+          </tr>
+          <tr class="bg-white hover:bg-blue-50 transition-colors">
+            <td class="p-4 border">৪:৩০ - ৫:৩০</td>
+            <td class="p-4 border">থিওরি অফ কম্পিউটিং</td>
+            <td class="p-4 border">থিওরি অফ কম্পিউটিং</td>
+            <td class="p-4 border">থিওরি অফ কম্পিউটিং</td>
+            <td class="p-4 border">থিওরি অফ কম্পিউটিং</td>
+            <td class="p-4 border">ম্যাথ</td>
+            <td class="p-4 border">থিওরি অফ কম্পিউটিং</td>
+            <td class="p-4 border">ডেটাবেস ম্যানেজমেন্ট</td>
+          </tr>
+          <tr class="bg-gray-100 hover:bg-blue-50 transition-colors">
+            <td class="p-4 border">৫:৩০ - ৬:০০</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+          </tr>
+          <tr class="bg-white hover:bg-blue-50 transition-colors">
+            <td class="p-4 border">৬:০০ - ৭:০০</td>
+            <td class="p-4 border">অ্যালগরিদম</td>
+            <td class="p-4 border">অ্যালগরিদম</td>
+            <td class="p-4 border">অ্যালগরিদম</td>
+            <td class="p-4 border">অ্যালগরিদম</td>
+            <td class="p-4 border">ডেটাবেস ম্যানেজমেন্ট</td>
+            <td class="p-4 border">অ্যালগরিদম</td>
+            <td class="p-4 border">অপারেটিং সিস্টেম</td>
+          </tr>
+          <tr class="bg-gray-100 hover:bg-blue-50 transition-colors">
+            <td class="p-4 border">৭:০০ - ৭:৩০</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+            <td class="p-4 border">বিরতি</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for adding fade-in animation
+    document.addEventListener('DOMContentLoaded', () => {
+      const rows = document.querySelectorAll('.fade-in');
+      rows.forEach((row, index) => {
+        setTimeout(() => {
+          row.classList.add('visible');
+        }, index * 200); // Stagger the animation for each row
+      });
+    });
+  </script>
+</body>
+
+</html>

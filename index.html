@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam and Study Routine</title>
+  <link rel="icon" href="https://img.icons8.com/?size=48&id=OYbFh7PuEW4n&format=png" type="image/x-icon">
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(45deg, #ff6b6b, #f06595, #ffe66d, #6bcb77);
+      background-size: 400% 400%;
+      animation: gradient-animation 15s ease infinite;
+    }
+
+    @keyframes gradient-animation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .slide-in {
+      transform: translateX(-100%);
+      /* Start from the left */
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+
+    .slide-in.visible {
+      transform: translateX(0);
+      /* Slide to the original position */
+      opacity: 1;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+    }
+
+    /* Updated hover effects */
+    tr:hover {
+      background-color: rgba(255, 182, 193, 0.5);
+      /* Light pink color */
+      transform: scale(1.02);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    /* Header styles */
+    .exam-header {
+      background: linear-gradient(to right, #4caf50, #81c784);
+    }
+
+    .study-header {
+      background: linear-gradient(to right, #9c27b0, #e1bee7);
+    }
+
+    /* Text shadow for headers */
+    h2 {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Rounded corners for tables */
+    table {
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+
+    /* Animated cell background */
+    td {
+      background: rgba(255, 255, 255, 0.7);
+      transition: background 0.3s ease;
+    }
+
+    td:hover {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body class="flex justify-center items-center min-h-screen p-6 lg:p-10">
+  <div class="flex flex-col md:flex-row justify-center gap-6 w-full lg:w-11/12 snap-proximity snap-x overflow-hidden">
+    <!-- Mid Term Exam Routine -->
+    <div
+      class="slide-in bg-white shadow-lg rounded-lg overflow-hidden w-full md:w-1/2 snap-mandatory snap-x overflow-x-auto scroll-container">
+      <div class="exam-header p-4">
+        <h2 class="text-xl font-semibold text-center text-white">Mid Term Exam Routine - 61A (CSE)</h2>
+      </div>
+      <table class="w-full table-auto border-collapse">
+        <thead>
+          <tr class="bg-green-100">
+            <th class="p-4 border">Date</th>
+            <th class="p-4 border">Time</th>
+            <th class="p-4 border">Course Title</th>
+            <th class="p-4 border">Teacher</th>
+            <th class="p-4 border">Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center">
+            <td class="p-4 border">18-10-24 Friday</td>
+            <td class="p-4 border">02:00-03:00PM</td>
+            <td class="p-4 border">CSE 315: Operating System</td>
+            <td class="p-4 border">Monorara Sultana Marzia</td>
+            <td class="p-4 border">225, 226</td>
+          </tr>
+          <tr class="text-center bg-gray-50">
+            <td class="p-4 border">19-10-24 Saturday</td>
+            <td class="p-4 border">02:00-03:00PM</td>
+            <td class="p-4 border">CSE 319: Theory of Computing</td>
+            <td class="p-4 border">Maysha Famidha</td>
+            <td class="p-4 border">225, 226</td>
+          </tr>
+          <tr class="text-center">
+            <td class="p-4 border">20-10-2024 Sunday</td>
+            <td class="p-4 border">02:00-03:00PM</td>
+            <td class="p-4 border">CSE 311: Database Management System</td>
+            <td class="p-4 border">Jalal Uddin</td>
+            <td class="p-4 border">225, 226</td>
+          </tr>
+          <tr class="text-center bg-gray-50">
+            <td class="p-4 border">21-10-24 Monday</td>
+            <td class="p-4 border">11:00-12:00PM</td>
+            <td class="p-4 border">MAT 103: Analytical & Vector Geometry</td>
+            <td class="p-4 border">Arjuman Ara</td>
+            <td class="p-4 border">222, 223, 224</td>
+          </tr>
+          <tr class="text-center">
+            <td class="p-4 border">22-10-24 Tuesday</td>
+            <td class="p-4 border">09:30-10:30AM</td>
+            <td class="p-4 border">CSE 215: Algorithms</td>
+            <td class="p-4 border">Faria Rahman</td>
+            <td class="p-4 border">225, 226</td>
+          </tr>
+          <tr class="text-center bg-gray-50">
+            <td class="p-4 border">25-10-24 Friday</td>
+            <td class="p-4 border">09:30-10:30AM</td>
+            <td class="p-4 border">EEE 303: Electronic Circuit - II</td>
+            <td class="p-4 border">Md. Ziaul Islam</td>
+            <td class="p-4 border">222</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Weekly Study Routine -->
+    <div
+      class="fade-in bg-white shadow-lg rounded-lg overflow-hidden w-full md:w-1/2 snap-mandatory snap-x overflow-x-auto scroll-container">
+      <div class="study-header p-4 w-full">
+        <h2 class="text-xl font-semibold text-center text-white ">Weekly Study Routine</h2>
+      </div>
+      <table class="w-full table-auto border-collapse">
+        <thead>
+          <tr class="bg-purple-100">
+            <th class="p-4 border">Time</th>
+            <th class="p-4 border">Saturday</th>
+            <th class="p-4 border">Sunday</th>
+            <th class="p-4 border">Monday</th>
+            <th class="p-4 border">Tuesday</th>
+            <th class="p-4 border">Wednesday</th>
+            <th class="p-4 border">Thursday</th>
+            <th class="p-4 border">Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="text-center">
+            <td class="p-4 border">9:00 - 4:00</td>
+            <td class="p-4 border">University Class</td>
+            <td class="p-4 border">University Class</td>
+            <td class="p-4 border">University Class</td>
+            <td class="p-4 border">University Class</td>
+            <td class="p-4 border">Holiday</td>
+            <td class="p-4 border">Holiday</td>
+            <td class="p-4 border">Holiday</td>
+          </tr>
+          <tr class="text-center bg-gray-50">
+            <td class="p-4 border">4:00 - 4:30</td>
+            <td class="p-4 border">Refreshment</td>
+            <td class="p-4 border">Refreshment</td>
+            <td class="p-4 border">Refreshment</td>
+            <td class="p-4 border">Refreshment</td>
+            <td class="p-4 border">Refreshment</td>
+            <td class="p-4 border">Refreshment</td>
+            <td class="p-4 border">Refreshment</td>
+          </tr>
+          <tr class="text-center">
+            <td class="p-4 border">4:30 - 6:30</td>
+            <td class="p-4 border">Web Dev Module</td>
+            <td class="p-4 border">Web Dev Module</td>
+            <td class="p-4 border">Web Dev Module</td>
+            <td class="p-4 border">Web Dev Module</td>
+            <td class="p-4 border">Web Dev Module</td>
+            <td class="p-4 border">Web Dev Module</td>
+            <td class="p-4 border">Web Dev Module</td>
+          </tr>
+          <tr class="text-center bg-gray-50">
+            <td class="p-4 border">6:30 - 7:00</td>
+            <td class="p-4 border">Break</td>
+            <td class="p-4 border">Break</td>
+            <td class="p-4 border">Break</td>
+            <td class="p-4 border">Break</td>
+            <td class="p-4 border">Break</td>
+            <td class="p-4 border">Break</td>
+            <td class="p-4 border">Break</td>
+          </tr>
+          <tr class="text-center">
+            <td class="p-4 border">7:00 - 9:00</td>
+            <td class="p-4 border">Assignment</td>
+            <td class="p-4 border">Assignment</td>
+            <td class="p-4 border">Assignment</td>
+            <td class="p-4 border">Self-Study</td>
+            <td class="p-4 border">Assignment</td>
+            <td class="p-4 border">Self-Study</td>
+            <td class="p-4 border">Assignment</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const slideInDiv = document.querySelector('.slide-in');
+      const fadeInDiv = document.querySelector('.fade-in');
+
+      // Delay the fade-in effect for the second div
+      setTimeout(() => {
+        slideInDiv.classList.add('visible');
+      }, 500); // Delay for the first div
+
+      setTimeout(() => {
+        fadeInDiv.classList.add('visible');
+      }, 1500); // Delay for the second div
+    });
+  </script>
+</body>
+
+</html>
